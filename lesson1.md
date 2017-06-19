@@ -45,5 +45,32 @@ Array boundary: Any ```x < 0 f[x] = +infinite```
 Base case: ```f[0] = 0```  
 Calculation start from smaller number to larger number.  
 
+### Problem 2
+E.G. Robot is on the topleft corner of a matrix. Can only walk right and
+downwards. How many ways to get to the bottom right corner?
 
+Last Step has to come from the top or from the left.  
+Assume there are ```f[m][n]``` ways to get to bottom left.  
+f[m][n] = f[m-1][n] + f[m][n-1]  
+Base case: f[0][0] = 1  
+
+For 2D DP we calculate the elements from the first row and then go to
+bottom.  
+
+Time Complexity = O(m*n)  
+Space Complexity = O(m*n)
+
+### Problem 3
+Jump Game:
+There are n stones in a array. A frog is on the first stone want to get
+to n-1 stone. If the frog at the i position the frog can jump a[i]
+steps.  
+
+Two things needs to happen. Frog can jump to stone i. And last step has
+to get to stone n-1.  
+
+** Sub problem ** weather the frog can jump to stone i.  
+Assume: ```f[j]``` is weather the frog can jump to stone i.  
+
+Base case: ```f[0] = true```
 

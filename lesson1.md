@@ -57,8 +57,8 @@ Base case: f[0][0] = 1
 For 2D DP we calculate the elements from the first row and then go to
 bottom.  
 
-Time Complexity = O(m*n)  
-Space Complexity = O(m*n)
+Time Complexity = O(m\*n)  
+Space Complexity = O(m\*n)
 
 ### Problem 3
 Jump Game:
